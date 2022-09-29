@@ -4,4 +4,11 @@ const randomAux = {
     aux3 : 3,
 }
 
+const randomAux2 = {
+    ...randomAux,
+    aux4 : 4,
+    aux3 : 3,
+}
+
 console.log(randomAux);
+console.log(randomAux2);
