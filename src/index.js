@@ -1,3 +1,4 @@
+import "./styles/index.css";
 const randomAux = {
     aux1 : 1,
     aux2 : 2,
