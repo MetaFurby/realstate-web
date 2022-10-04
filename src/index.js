@@ -1,4 +1,4 @@
-import "./styles/index.css";
+import "./styles/index.scss";
 const randomAux = {
     aux1 : 1,
     aux2 : 2,
