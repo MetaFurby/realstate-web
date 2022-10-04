@@ -1,15 +1,4 @@
-import "./styles/index.scss";
-const randomAux = {
-    aux1 : 1,
-    aux2 : 2,
-    aux3 : 3,
-}
+import { render } from "react-dom";
+import App from "./components/App";
 
-const randomAux2 = {
-    ...randomAux,
-    aux4 : 4,
-    aux3 : 3,
-}
-
-console.log(randomAux);
-console.log(randomAux2);
+render(<App></App>, document.getElementById("root"));
