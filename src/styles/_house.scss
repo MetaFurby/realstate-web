@@ -1,0 +1,9 @@
+.house {
+    background: url("../assets/house-animation.gif");
+    background-size: cover;
+    background-position: center;
+    min-height: 800px;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+}
