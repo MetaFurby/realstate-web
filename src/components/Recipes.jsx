@@ -20,8 +20,8 @@ const Recipes = () => {
     return (
         <div>
             <h3>Current Recipe:</h3>
-            <button onClick={() => setRecipe(randomAux)}>Random aux 1</button>
-            <button onClick={() => setRecipe(randomAux2)}>Random aux 2</button>
+            <button className="font-bold py-2 px-4 rounded bg-blue-500 text-white" onClick={() => setRecipe(randomAux)}>Random aux 1</button>
+            <button className="font-bold py-2 px-4 rounded bg-blue-500 text-white" onClick={() => setRecipe(randomAux2)}>Random aux 2</button>
             <ul>
                 {Object.keys(recipe).map((material) => (
                     <li key={material}>

@@ -29,8 +29,8 @@ module.exports = {
                         options: { publicPath : ""},
                     },
                     "css-loader",
+                    "sass-loader",
                     "postcss-loader",
-                    "sass-loader"
                 ],
             },
             {
