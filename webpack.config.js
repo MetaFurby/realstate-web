@@ -56,5 +56,7 @@ module.exports = {
     devServer: {
         static: "./dist",
         hot: true,
+        port: 8080,
+        open: true,
     }
 }
