@@ -1,7 +1,6 @@
 import '../styles/index.scss';
 import Recipes from './Recipes';
 import houseImg from '../assets/house-1.png';
-import './App.scss';
 
 const App = () => {
 	return (
