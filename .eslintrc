@@ -1,12 +1,54 @@
 {
+    "plugins": [
+		"@babel",
+		"react"
+    ],
     "parser": "@babel/eslint-parser",
-    "extends": ["airbnb"],
-    "rules": {
-        "max-len": [1, 120, 2, {"ignoreComments": true}],
-        "react/react-in-jsx-scope": 0,
-        "react/jsx-filename-extension": 0
+    "parserOptions": { 
+        "ecmaVersion": 6,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true
+        }
     },
+    "extends": [
+        "plugin:react/recommended",
+        "airbnb"
+    ],
+    "rules": {
+		"react/jsx-one-expression-per-line": ["off"],
+		"react/jsx-no-undef": ["error", { "allowGlobals": true }],
+		"react/jsx-indent": ["error", "tab"],
+		"react/jsx-indent-props": ["error", "tab"],
+		"react/jsx-fragments": ["off"],
+		"react/jsx-filename-extension": ["off"],
+		"react/forbid-prop-types": ["off"],
+        "react/react-in-jsx-scope": ["off"],
+		"import/no-unresolved": ["off"],
+		"import/no-cycle": ["error", { "maxDepth": 3 }],
+		"no-underscore-dangle": ["off"],
+		"no-plusplus": ["off"],
+		"max-len": ["warn", { "code": 160, "tabWidth": 2 }],
+		"indent": ["error", "tab", { "SwitchCase": 1 }],
+		"no-tabs": ["off"],
+		"import/extensions": ["off"],
+		"camelcase": [
+			"error", {
+				"ignoreDestructuring": true,
+				"allow": [ "^UNSAFE_" ]
+			}
+		],
+		"key-spacing": [
+			"error",
+			{
+				"beforeColon": true,
+				"align": "colon"
+			}
+		]
+	},
     "env": {
+        "es6": true,
+		"node": true,
         "browser": true,
         "jest": true
     }
