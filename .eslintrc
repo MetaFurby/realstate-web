@@ -1,19 +1,13 @@
 {
     "plugins": [
-		"@babel",
-		"react"
+		"react",
+		"import",
+		"jsx-a11y"
     ],
     "parser": "@babel/eslint-parser",
-    "parserOptions": { 
-        "ecmaVersion": 6,
-        "sourceType": "module",
-        "ecmaFeatures": {
-            "jsx": true
-        }
-    },
     "extends": [
-        "plugin:react/recommended",
-        "airbnb"
+        "airbnb",
+		"airbnb/hooks"
     ],
     "rules": {
 		"react/jsx-one-expression-per-line": ["off"],
@@ -24,7 +18,8 @@
 		"react/jsx-filename-extension": ["off"],
 		"react/forbid-prop-types": ["off"],
         "react/react-in-jsx-scope": ["off"],
-		"import/no-unresolved": ["off"],
+		"react/function-component-definition": ["off"],
+		"arrow-body-style": ["off"],
 		"import/no-cycle": ["error", { "maxDepth": 3 }],
 		"no-underscore-dangle": ["off"],
 		"no-plusplus": ["off"],

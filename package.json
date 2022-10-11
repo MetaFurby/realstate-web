@@ -10,14 +10,7 @@
     "build": "NODE_ENV=production webpack",
     "build-dev": "webpack",
     "clean": "rm -rf dist",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "precommit": "lint-staged"
-  },
-  "lint-staged": {
-    "src/**/*.{js,jsx}": [
-      "eslint --fix", 
-      "git add"
-    ]
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
