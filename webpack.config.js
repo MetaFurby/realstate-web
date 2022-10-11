@@ -2,6 +2,7 @@ const path = require("path");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
+const ESLintPlugin = require('eslint-webpack-plugin');
 let mode = "development";
 let target = "web";
 if (process.env.NODE_ENV === "production") {
@@ -43,6 +44,7 @@ module.exports = {
         ]
     },
     plugins: [
+        new ESLintPlugin(),
         new CleanWebpackPlugin(),
         new MiniCssExtractPlugin(),
         new HtmlWebpackPlugin({
