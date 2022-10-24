@@ -21,6 +21,7 @@
 		"react/function-component-definition": ["off"],
 		"arrow-body-style": ["off"],
 		"import/no-cycle": ["error", { "maxDepth": 3 }],
+		"import/no-extraneous-dependencies": ["off"],
 		"no-underscore-dangle": ["off"],
 		"no-plusplus": ["off"],
 		"max-len": ["warn", { "code": 160, "tabWidth": 2 }],
