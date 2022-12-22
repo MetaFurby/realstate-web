@@ -1,10 +1,11 @@
 import '../styles/index.scss';
-import Recipes from './Recipes';
 import houseImg from '../assets/house-1.png';
+import Header from './shared/Header';
 
 const App = () => {
 	return (
 		<>
+			<Header />
 			<section className="house" />
 			<main>
 				<section>
@@ -12,7 +13,6 @@ const App = () => {
 				</section>
 				<img src={houseImg} alt="houseImg" width="250" />
 			</main>
-			<Recipes />
 		</>
 	);
 };
